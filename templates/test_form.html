@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Content Tone</title>
+<style>
+    .errorlist{color: red;}
+</style>
+</head>
+
+<body>
+<form action="/test/" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+
+</html>
